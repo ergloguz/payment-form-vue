@@ -1,7 +1,6 @@
 <template>
   <div class="payment-actions">
     <a class="return">Return to Shipping</a>
-
     <a @click="onClick" class="finish">Finish Order
       <img class="ml-2" src="../assets/icons/indir.png" alt="arrow">
     </a>
