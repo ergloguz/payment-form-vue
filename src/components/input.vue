@@ -1,15 +1,15 @@
 <template>
-  <div class="form-group success">
-    <input :value="code" @input="updateCode($event.target.value)"
+  <div >
+    <b-form-input :value="code" :name="name" @input="updateCode($event.target.value)"
            class="form-control  "  :id="id" type="text"
-           name="ccnum" value="4542 9931 9292 2293"/>
+           name="ccnum" ></b-form-input>
   </div>
 </template>
 
 <script>
 export default {
   name: "Input",
-  props: ["code","id"],
+  props: ["code","id","name"],
   methods: {
     updateCode(code) {
       this.$emit('input', code)

@@ -36,7 +36,11 @@ export default {
   padding-top: 0.25em;
   font-size: 1em;
 }
-
+.pm-text {
+  padding-left: 2.25em;
+  flex: 1 1 100%;
+  position: relative;
+}
 .green {
   color: #7dc855 !important;
   cursor: pointer;
