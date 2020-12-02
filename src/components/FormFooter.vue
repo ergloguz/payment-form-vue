@@ -27,33 +27,31 @@ export default {
   align-items: center;
   border-top: 1px solid #e1e8ee;
   color: #86939e;
+
+  a {
+    flex: 1 1 50%;
+    padding: 1em;
+    text-underline-mode: none;
+    font-weight: 500;
+    text-align: center;
+    color: #86939e;
+    text-decoration: none !important;
+    cursor: pointer;
+
+
+    &:hover {
+      color: #86939e;
+      text-decoration: none !important;
+    }
+
+  }
+
+  a + a {
+    border-left: 1px solid #e1e8ee;
+    text-decoration: none !important;
+  }
 }
 
-.payment-actions > a {
-  flex: 1 1 50%;
-  padding: 1em;
-  text-underline-mode: none;
-  font-weight: 500;
-  text-align: center;
-  color: #86939e;
-  text-decoration: none !important;
-  cursor: pointer;
-
-
-}
-
-.payment-actions > a:hover {
-  color: #86939e;
-  text-decoration: none !important;
-
-
-}
-
-.payment-actions > a + a {
-  border-left: 1px solid #e1e8ee;
-  text-decoration: none !important;
-
-}
 
 .payment-actions > a.finish {
   color: #7dc855;

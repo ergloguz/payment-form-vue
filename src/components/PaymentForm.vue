@@ -6,7 +6,7 @@
       <CustomText size="title" tag="h2">Choose your payment method</CustomText>
       <div class="pm-item">
         <input v-model="form.method" value="Paypal" id="mpp" type="radio" name="payment-method"/>
-        <label class="pm-label" for="mpp">
+        <label class="pm-label">
           <div class="pm-text">
             <CustomText size="method" tag="h5">Paypal</CustomText>
             <CustomText tag="p">Safe payment online. Credit card needed. Paypal account is not necessary.</CustomText>
@@ -18,7 +18,7 @@
       </div>
       <div class="pm-item">
         <input id="mcc" v-model="form.method" value="Credit Card" type="radio" name="payment-method" checked="checked"/>
-        <label class="pm-label" for="mcc">
+        <label class="pm-label">
 
 
           <div class="pm-text">
@@ -43,9 +43,8 @@
 
 
       <div class="form-group">
-        <label for="example-input-1">Credit Card Number</label>
+        <label>Credit Card Number</label>
         <b-form-input
-            id="example-input-1"
             name="example-input-1"
             class="form-control"
             v-model="$v.form.number.$model"
@@ -55,11 +54,10 @@
 
 
       <div class="form-group half pr-3">
-        <label for="example-input-2">Expiry Date</label>
+        <label>Expiry Date</label>
         <div class="row mx-0">
           <div class="col-6 pl-0 pr-2">
             <b-form-select
-                id="example-input-2"
                 name="example-input-2"
                 v-model="$v.form.month.$model"
                 :options="months"
@@ -68,7 +66,6 @@
           </div>
           <div class="col-6 pl-2 pr-0">
             <b-form-select
-                id="example-input-3"
                 name="example-input-3"
                 v-model="$v.form.year.$model"
                 :options="years"
@@ -79,9 +76,8 @@
       </div>
 
       <div class="form-group half pl-3">
-        <label for="example-input-4">CVV Code <span class="question">?</span></label>
+        <label>CVV Code <span class="question">?</span></label>
         <b-form-input
-            id="example-input-4"
             name="example-input-4"
             class="form-control"
             v-model="$v.form.cvv.$model"
@@ -90,9 +86,8 @@
       </div>
 
       <div class="form-group">
-        <label for="example-input-5">Name on Card</label>
+        <label>Name on Card</label>
         <b-form-input
-            id="example-input-5"
             name="example-input-5"
             class="form-control"
             v-model="$v.form.name.$model"
@@ -105,7 +100,6 @@
 </template>
 
 <script>
-import Input from "../components/input.vue"
 import CustomText from "./CustomText";
 import Tabs from "./Tabs";
 import PaymentTabs from "./Tabs";
@@ -126,7 +120,6 @@ export default {
     IconVisa,
     Tabs,
     CustomText,
-    Input,
     IconArrow
   },
   data() {

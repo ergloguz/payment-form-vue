@@ -3,7 +3,7 @@
 body {
     padding-top: 3em;
     padding-bottom: 3em;
-    background-color: #f2f2f2;
+    background-color: rgb(var(--white));
     font-family: "Roboto", sans-serif;
 }
 
@@ -11,7 +11,7 @@ body {
     max-width: 36em;
     margin: 0 auto;
     background-color: white;
-    color: #5e6977;
+    color: rgb(var(--text-color));
     border-radius: 0.3em;
     box-shadow: 0.2em 0.3em 0.8em -0.45em rgba(0, 0, 0, 0.2), 0 0.2em 0.5em 0 rgba(0, 0, 0, 0.08);
 }
@@ -22,7 +22,7 @@ body {
     padding: 1.8em 2em;
     font-size: 1.2em;
     line-height: 1.2;
-    color: #5e6977;
+    color: rgb(var(--text-color));
 }
 
 .payment-method .pm-item {
@@ -68,7 +68,7 @@ body {
 
 .payment-method .pm-text p {
     margin-bottom: 0;
-    color: #86939e;
+    color: rgb(var(--desc-color));
 }
 
 .payment-method .pm-thumb {
@@ -154,6 +154,7 @@ a:hover {
     text-underline-mode: none;
 
 }
+
 @media (max-width: 479px) {
     .payment {
         margin-left: 0.5rem;
